@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Load header and footer using jQuery
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body class="bg-dark">
+    <div id="header"></div>
+    <div class="container-fluid m-0 p-0">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slide.avif" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide2.avif" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide3.avif" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container-fluid p-5 m-0" id="about">
+        <div class="row">
+            <h3 class="text-center text-light overflow-hidden">We Are Vet</h3>
+            <div class="col-12 col-lg-6 col-md-6 my-5">
+                <img src="./img/about_img.avif" class="about_img w-100 " alt="">
+            </div>
+            <div class="col-12 col-lg- col-md-6 my-5">
+                <div class="card shadow bg-secondary my-3 text_card">
+                    <p class=" text-light  card_bg text-center p-5 ">Guardians of the animal kingdom, veterinarians are
+                        healers with a heart for creatures big and small.
+                        In the tapestry of life, they weave compassion, expertise, and care, stitching together the
+                        well-being of our cherished companions."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="services">
+        <div class="row">
+            <h3 class="text-center text-light overflow-hidden my-3">We facilitate</h3>
+            <div class="col-12 col-lg-6 col-md-6 ">
+                <div class="accordion accordion-flush my-2 " id="accordionExample">
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed bg-transparent text-light border rounded-pill"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="fasle" aria-controls="collapseOne">
+                                Consultations
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>During consultations Vet doctors not only diagnose and treat your ailing pet
+                                    but
+                                    also provide holistic advice on health care, nutrition and various other aspects for
+                                    your pet
+                                    to live a full and healthy life.
+                                    Please contact our reception desk to book an appointment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Surgery
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>We offer next-day appointments for major surgeries and advance appointments up to two
+                                    weeks for routine surgeries like neutering, dental or other electives. We are fully
+                                    equipped on-site to complete all pre-surgery testing and routine anaesthetic
+                                    surgeries on a next day basis.
+
+                                    From the time your pet walks in to the time of discharge, a member of our staff will
+                                    accompany it to keep it calm and help the surgery go off smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Inpatient Care
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Pre/Post-surgical Inpatient care.
+
+                                    Prior to a major surgery, pets check in at Vet. Our facility is equipped with
+                                    generously sized kennels and cages for a comfortable stay.
+
+                                    Post surgeries during recovery, all patients are monitored by a resident
+                                    veterinarian.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush " id="accordionExample">
+                        <div class="accordion-item bg-transparent text-light">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                    aria-expanded="fasle" aria-controls="collapseFour">
+                                    X-ray & Ultrasound
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p> Vet is equipped with the latest in radiology (X-ray) and ultrasound
+                                        machines.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 bg-transparent text-light">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                    In House Pathlogy Lab
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Our in-house pathology lab is fully equipped with advanced diagnostic equipment.
+                                        During blood or urine testing, our trained technicians ensure that every
+                                        procedure is done with minimum fuss and maximum care for your pet's comfort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 bg-transparent text-light">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                    aria-expanded="false" aria-controls="collapseSix">
+                                    24/7 Emergencies
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>At Vet, we offer 365 days of 24/7 care to ensure your furry friends receive
+                                        the highest quality of care. Our premises are fully equipped and our skilled
+                                        professionals are always dedicated to providing the best possible care for your
+                                        pets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-6 col-md-6">
+                <div class="accordion accordion-flush my-2" id="accordionFlushExample">
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                Dental Care
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p> Vet offers dental services in a dedicated dental suite. We encourage you to
+                                    schedule regular dental check-ups for your pet to avoid oral diseases as simple as
+                                    halitosis (bad breath) to complicated ones like gingivitis, tartar formation,
+                                    periodontal disease and tooth decay.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Preventative Health plan
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Be it losing weight or surgery to avoid a future complication, preventative health
+                                    care is a global practice now available for your pet in India.
+
+                                    We conduct a full evaluation and consultation before devising a plan that is most
+                                    suitable for your pet, you and your daily schedule. These plans allow our doctors to
+                                    routinely examine patients for signs of illness.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                Dermatology
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Skin diseases, infections, parasites, itching and hair loss can drastically reduce
+                                    the quality of life of the pet and is also frustrating for the owner.
+
+                                    We offer a full suite of dermatology services (preventative and curative) for cats
+                                    and dogs, as well as out-patient treatment for intensive care when necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-3 bg-transparent text-light ">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                Nutrition
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>We encourage you to consult with our in-house doctors so you can provide your pet
+                                    with a correct and balanced diet, no matter its age.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-4 bg-transparent text-light">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed text-light border rounded-pill bg-transparent"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                aria-expanded="false" aria-controls="flush-collapseFive">
+                                Pet Pharmacy
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>For your convenience as well as to ensure continuous care, Vet also has an
+                                    in-house pharmacy, with medication, nutritional supplements, grooming items and
+                                    other healthcare products.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cotainer-fluid" id="Packges">
+                <div class="row my-3 ">
+                    <div class="col-12 col-lg-4 col-md-4  mb-5">
+                        <div class="card_pack  text-light">
+                            <h5 class="text-center">First Aid Package</h5>
+                        <p class="text-center">Consultation</p>
+                        <p class="text-center">Preventation Health PLan</p>
+                        <p class="text-center">Nutrition</p> 
+                            <a class=" nav-link active text-info text-center " href="book_appoitment.php">Book An Appointment</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-4  mb-5">
+                        <div class="card_pack  text-light">
+                            <h5 class="text-center">All Major Package</h5>
+                        <p class="text-center">Dermatology</p>
+                        <p class="text-center">Dental Care</p>
+                        <p class="text-center">Gromming</p>   
+
+                            <a class=" nav-link active text-info text-center " href="book_appoitment.php">Book An Appointment</a>
+                    
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-4 mb-5 ">
+                        <div class="card_pack  text-light">
+                            <h5 class="text-center">vaccination Package</h5>
+                        <p class="text-center">1st Three Doses</p>
+                        <p class="text-center">Medical</p>
+                        <p class="text-center">Rest & Bed</p>   
+                            <a class=" nav-link active text-info text-center " href="book_appoitment.php">Book An Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="footer"></div>
+
+</html>

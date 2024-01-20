@@ -1,0 +1,39 @@
+* {
+    overflow-x: hidden;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.0em;
+}
+
+.about_img {
+    border-radius: 60% 30% 50% 70%;
+}
+
+.text_card {
+
+    font-size: larger;
+}
+
+.card_bg {
+    background: linear-gradient(to right, #1f1c2c, #928dab);
+}
+
+.navbtn:hover {
+    border-bottom: 2px solid skyblue;
+    transition: ease-in-out;
+}
+
+.card_pack {
+    box-shadow: 0px 0px 0px white;
+    box-shadow: .8px .9px 3px white;
+
+}
+
+.card_pack:hover {
+    box-shadow: 1px 8px 20px white;
+}
